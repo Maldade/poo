@@ -8,15 +8,24 @@
 #ifndef CLIENTE_H
 #define	CLIENTE_H
 
+#include<string>
+
+using std::string;
+
 class Cliente {
 public:
-    Cliente();
-    Cliente(const Cliente& orig);
+    Cliente(string name, string telephone, string address);
     virtual ~Cliente();
+    void setNome(string name);
+    void setTelefone(string telephone);
+    void setEndereco(string address);
+    string getNome();
+    string getTelefone();
+    string getEndereco();
 private:
-    std::string nome;
-    std::string telefone;
-    std::string endereco;
+    string nome;
+    string telefone;
+    string endereco;
 };
 
 #endif	/* CLIENTE_H */

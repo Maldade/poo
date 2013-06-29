@@ -8,13 +8,18 @@
 #ifndef MARCA_H
 #define	MARCA_H
 
+#include<string>
+
+using std::string;
+
 class Marca {
 public:
-    Marca();
-    Marca(const Marca& orig);
+    Marca(string brand);
+    Marca(int brand);
     virtual ~Marca();
     string getMarca();
-    void setMarca();
+    void setMarca(string brand);
+    void setMarca(int brand);
 private:
     enum{
         fiat,
@@ -22,7 +27,7 @@ private:
         ford,
         honda
     };
-    std::string marca;
+    string marca;
 };
 
 #endif	/* MARCA_H */

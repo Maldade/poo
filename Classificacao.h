@@ -11,9 +11,11 @@
 class Classificacao {
 public:
     Classificacao();
-    Classificacao(const Classificacao& orig);
+    Classificacao(int tipo);
     virtual ~Classificacao();
     int getClasse();
+    void setClasse(int tipo);
+    void setClasse(string tipo);
 private:
     enum{
         classe1,

@@ -8,13 +8,16 @@
 #ifndef ORCAMENTO_H
 #define	ORCAMENTO_H
 
+#include<string>
+
+using std::string;
+
 class Orcamento {
 public:
-    Orcamento();
-    Orcamento(const Orcamento& orig);
+    Orcamento(string type, float value);
     virtual ~Orcamento();
 private:
-    std::string tipo;
+    string tipo;
     float valorRessarc;
 };
 

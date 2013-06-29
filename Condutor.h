@@ -8,13 +8,19 @@
 #ifndef CONDUTOR_H
 #define	CONDUTOR_H
 
+#include<string>
+
+using std::string;
+
 class Condutor {
 public:
-    Condutor();
-    Condutor(const Condutor& orig);
+    Condutor(string license, int age);
     virtual ~Condutor();
+    void setIdade(int idade = 0);
+    string getNumCNH();
+    int getIdade();
 private:
-    std::string numCNH;
+    string numCNH;
     int idade;
 };
 
