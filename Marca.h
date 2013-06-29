@@ -13,6 +13,8 @@ public:
     Marca();
     Marca(const Marca& orig);
     virtual ~Marca();
+    string getMarca();
+    void setMarca();
 private:
     enum{
         fiat,
@@ -20,6 +22,7 @@ private:
         ford,
         honda
     };
+    std::string marca;
 };
 
 #endif	/* MARCA_H */

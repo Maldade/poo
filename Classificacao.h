@@ -13,11 +13,13 @@ public:
     Classificacao();
     Classificacao(const Classificacao& orig);
     virtual ~Classificacao();
+    int getClasse();
 private:
     enum{
         classe1,
         classe2
     };
+    int classe;
 };
 
 #endif	/* CLASSIFICACAO_H */
