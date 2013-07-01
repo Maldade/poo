@@ -4,10 +4,20 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Arquivos de Cabeçalho"
                    projectFiles="true">
+      <itemPath>Classificacao.h</itemPath>
+      <itemPath>Cliente.h</itemPath>
+      <itemPath>Condutor.h</itemPath>
+      <itemPath>Marca.h</itemPath>
+      <itemPath>Orcamento.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Arquivos de Código-Fonte"
                    projectFiles="true">
+      <itemPath>Classificacao.cpp</itemPath>
+      <itemPath>Cliente.cpp</itemPath>
+      <itemPath>Condutor.cpp</itemPath>
+      <itemPath>Marca.cpp</itemPath>
+      <itemPath>Orcamento.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -37,6 +47,26 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="Classificacao.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Classificacao.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cliente.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cliente.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Condutor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Condutor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Marca.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Marca.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Orcamento.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Orcamento.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -61,6 +91,26 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Classificacao.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Classificacao.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cliente.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cliente.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Condutor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Condutor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Marca.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Marca.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Orcamento.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Orcamento.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>

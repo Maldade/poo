@@ -35,6 +35,11 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Classificacao.o \
+	${OBJECTDIR}/Cliente.o \
+	${OBJECTDIR}/Condutor.o \
+	${OBJECTDIR}/Marca.o \
+	${OBJECTDIR}/Orcamento.o \
 	${OBJECTDIR}/main.o
 
 
@@ -61,6 +66,31 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/poo.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/poo ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/Classificacao.o: Classificacao.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Classificacao.o Classificacao.cpp
+
+${OBJECTDIR}/Cliente.o: Cliente.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Cliente.o Cliente.cpp
+
+${OBJECTDIR}/Condutor.o: Condutor.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Condutor.o Condutor.cpp
+
+${OBJECTDIR}/Marca.o: Marca.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Marca.o Marca.cpp
+
+${OBJECTDIR}/Orcamento.o: Orcamento.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Orcamento.o Orcamento.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}

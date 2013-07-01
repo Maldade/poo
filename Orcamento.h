@@ -15,7 +15,10 @@ using std::string;
 class Orcamento {
 public:
     Orcamento(string type, float value);
+    void geraOrcamento();
     virtual ~Orcamento();
+    string getTipo();
+    float getValorRessarc();
 private:
     string tipo;
     float valorRessarc;

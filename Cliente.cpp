@@ -7,12 +7,56 @@
 
 #include "Cliente.h"
 
-Cliente::Cliente() {
+Cliente::Cliente(string name, string telephone, string address){
+    while(!name){
+        std::cout<<"Insira nome"<<std::endl;
+        std::cin>>name;
+    }
+    while(!telephone){
+        std::cout<<"Insira telefone válido"<<std::endl;
+        std::cin>>telephone;
+    }
+    while(!address){
+        std::cout<<"Insira endereço válido"<<std::endl;
+        std::cin>>address;
+    }
+    nome = name;
+    endereco = address;
+    telefone = telephone;
 }
 
-Cliente::Cliente(const Cliente& orig) {
+void Cliente::setNome(string name){
+    while(!name){
+        std::cout<<"Insira nome"<<std::endl;
+        std::cin>>name;
+    }
+    nome = name;
 }
 
-Cliente::~Cliente() {
+void Cliente::setTelefone(string telephone){
+    while(!telephone){
+        std::cout<<"Insira telefone válido"<<std::endl;
+        std::cin>>telephone;
+    }
+    telefone = telephone;
 }
 
+void Cliente::setEndereco(string address){
+    while(!address){
+        std::cout<<"Insira endereço válido"<<std::endl;
+        std::cin>>address;
+    }
+    endereco = address;
+}
+
+string Cliente::getNome(){
+    return nome;
+}
+
+string Cliente::getTelefone(){
+    return telefone;
+}
+
+string Cliente::getEndereco(){
+    return endereco;
+}

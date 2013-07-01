@@ -6,13 +6,30 @@
  */
 
 #include "Orcamento.h"
+#include<iostream>
 
-Orcamento::Orcamento() {
+Orcamento::Orcamento(string type, float value){
+    tipo = type;
+    valorRessarc = value;
 }
 
-Orcamento::Orcamento(const Orcamento& orig) {
+void Orcamento::geraOrcamento(){
+    string type;
+    float value;
+    type = getTipo();
+    value = getValorRessarc();
+    //TERMINARTERMINARTERMINARTERMINARTERMINARTERMINARTERMINARTERMINARTERMINARTERMINARTERMINAR//
+}
+
+string Orcamento::getTipo(){
+    return tipo;
+}
+
+float Orcamento::getValorRessarc(){
+    return valorRessarc;
 }
 
 Orcamento::~Orcamento() {
+	
 }
 

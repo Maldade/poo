@@ -8,17 +8,20 @@
 #ifndef CLASSIFICACAO_H
 #define	CLASSIFICACAO_H
 
+#include<string>
+
+using std::string;
+
 class Classificacao {
 public:
-    Classificacao();
     Classificacao(int tipo);
-    virtual ~Classificacao();
-    int getClasse();
+    Classificacao(string tipo);
+    string getClasse();
     void setClasse(int tipo);
     void setClasse(string tipo);
 private:
     enum{
-        classe1,
+        classe1 = 1,
         classe2
     };
     int classe;

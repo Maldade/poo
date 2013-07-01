@@ -15,7 +15,6 @@ using std::string;
 class Cliente {
 public:
     Cliente(string name, string telephone, string address);
-    virtual ~Cliente();
     void setNome(string name);
     void setTelefone(string telephone);
     void setEndereco(string address);

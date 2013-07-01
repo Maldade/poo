@@ -15,8 +15,7 @@ using std::string;
 class Condutor {
 public:
     Condutor(string license, int age);
-    virtual ~Condutor();
-    void setIdade(int idade = 0);
+    void setIdade(int age);
     string getNumCNH();
     int getIdade();
 private:
