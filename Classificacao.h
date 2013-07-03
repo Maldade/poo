@@ -8,17 +8,13 @@
 #ifndef CLASSIFICACAO_H
 #define	CLASSIFICACAO_H
 
-#include<string>
-
-using std::string;
+#include <iostream>
 
 class Classificacao {
 public:
-    Classificacao(int tipo);
-    Classificacao(string tipo);
-    string getClasse();
-    void setClasse(int tipo);
-    void setClasse(string tipo);
+    Classificacao();
+    std::string getClasse();
+    void setClasse();
 private:
     enum{
         classe1 = 1,

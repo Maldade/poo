@@ -1,3 +1,10 @@
+/*
+ * TipoSinistro.cpp
+ *
+ *  Created on: 29/06/2013
+ *      Author: João Pedro Dias
+ */
+
 #ifndef _TIPO_SINISTRO_H_
 #define _TIPO_SINISTRO_H_
 
@@ -18,16 +25,10 @@ class TipoSinistro{
 		TipoSinistro();
 		TipoSinistro(int);
 		std::string getTipo();
-		void setTipo(int);
+		void setTipo(std::string);
 
 	private:
 
 		Tipo t;
 };
 #endif
-
-
-// agraçação
-// composição
-// associaoção simples
-// herança

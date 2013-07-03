@@ -35,12 +35,21 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Apolice.o \
+	${OBJECTDIR}/Bo.o \
 	${OBJECTDIR}/Classificacao.o \
 	${OBJECTDIR}/Cliente.o \
 	${OBJECTDIR}/Condutor.o \
+	${OBJECTDIR}/Date.o \
+	${OBJECTDIR}/GerenciarSegurados.o \
+	${OBJECTDIR}/ListaApolice.o \
 	${OBJECTDIR}/Marca.o \
-	${OBJECTDIR}/Orcamento.o \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/Sinistro.o \
+	${OBJECTDIR}/Terceiro.o \
+	${OBJECTDIR}/TipoSinistro.o \
+	${OBJECTDIR}/TipoVeiculo.o \
+	${OBJECTDIR}/Veiculo.o \
+	${OBJECTDIR}/mainApolice.o
 
 
 # C Compiler Flags
@@ -67,6 +76,16 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/poo.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/poo ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/Apolice.o: Apolice.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Apolice.o Apolice.cpp
+
+${OBJECTDIR}/Bo.o: Bo.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Bo.o Bo.cpp
+
 ${OBJECTDIR}/Classificacao.o: Classificacao.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
@@ -82,20 +101,55 @@ ${OBJECTDIR}/Condutor.o: Condutor.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Condutor.o Condutor.cpp
 
+${OBJECTDIR}/Date.o: Date.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Date.o Date.cpp
+
+${OBJECTDIR}/GerenciarSegurados.o: GerenciarSegurados.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/GerenciarSegurados.o GerenciarSegurados.cpp
+
+${OBJECTDIR}/ListaApolice.o: ListaApolice.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/ListaApolice.o ListaApolice.cpp
+
 ${OBJECTDIR}/Marca.o: Marca.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Marca.o Marca.cpp
 
-${OBJECTDIR}/Orcamento.o: Orcamento.cpp 
+${OBJECTDIR}/Sinistro.o: Sinistro.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Orcamento.o Orcamento.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Sinistro.o Sinistro.cpp
 
-${OBJECTDIR}/main.o: main.cpp 
+${OBJECTDIR}/Terceiro.o: Terceiro.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Terceiro.o Terceiro.cpp
+
+${OBJECTDIR}/TipoSinistro.o: TipoSinistro.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/TipoSinistro.o TipoSinistro.cpp
+
+${OBJECTDIR}/TipoVeiculo.o: TipoVeiculo.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/TipoVeiculo.o TipoVeiculo.cpp
+
+${OBJECTDIR}/Veiculo.o: Veiculo.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Veiculo.o Veiculo.cpp
+
+${OBJECTDIR}/mainApolice.o: mainApolice.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/mainApolice.o mainApolice.cpp
 
 # Subprojects
 .build-subprojects:

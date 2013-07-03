@@ -7,23 +7,10 @@
 
 #include "Classificacao.h"
 
-Classificacao::Classificacao(int tipo){
-    switch (tipo){
-        case 1: classe = classe1;
-        case 2: classe = classe2;
-        default: classe = 3;
-    }
-}
+using namespace std;
 
-Classificacao::Classificacao(string tipo){
-    tipo = tolower(tipo);
-    switch (tipo){
-        case classe1: classe = classe1;
-        case classe 1: classe = classe1;
-        case classe2: classe = classe2;
-        case classe 2: classe = classe2;
-        default: classe = 3;
-    }
+Classificacao::Classificacao(){
+        classe = classe1;
 }
 
 string Classificacao::getClasse(){
@@ -34,21 +21,16 @@ string Classificacao::getClasse(){
     }
 }
 
-void Classificacao::setClasse(int tipo){
+void Classificacao::setClasse(){
+    int tipo;
+    cout << "Informe a classificação da apólice: " << endl;
+    cin >> tipo;
+
     switch (tipo){
-        case 1: classe = classe1;
-        case 2: classe = classe2;
-        default: classe = 3;
+        case 1: classe = classe1; break;
+        case 2: classe = classe2; break;
+        default: classe = 3; break;
     }
 }
 
-void Classificacao::setClasse(string tipo){
-    tipo = tolower(tipo);
-    switch (tipo){
-        case classe1: classe = classe1;
-        case classe 1: classe = classe1;
-        case classe2: classe = classe2;
-        case classe 2: classe = classe2;
-        default: classe = 3;
-    }
-}
+

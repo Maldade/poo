@@ -14,10 +14,14 @@ using std::string;
 
 class Condutor {
 public:
-    Condutor(string license, int age);
+    Condutor();
     void setIdade(int age);
+    void setNumCNH(string license);
+    void exibirCondutor();
     string getNumCNH();
     int getIdade();
+    Condutor * inserirCondutor();
+    Condutor *proxCond;
 private:
     string numCNH;
     int idade;
